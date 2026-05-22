@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/cart_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_title"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textColor="@color/blue_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="120dp"
+        app:layout_constraintBottom_toTopOf="@id/cart_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cart_title" />
+
+    <TextView
+        android:id="@+id/cart_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_empty"
+        android:textColor="@color/blue_dark"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/cart_list"
+        app:layout_constraintEnd_toEndOf="@id/cart_list"
+        app:layout_constraintStart_toStartOf="@id/cart_list"
+        app:layout_constraintTop_toTopOf="@id/cart_list" />
+
+    <TextView
+        android:id="@+id/cart_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_total_default"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="@color/blue_dark"
+        app:layout_constraintBottom_toTopOf="@id/cart_clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cart_clear"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
