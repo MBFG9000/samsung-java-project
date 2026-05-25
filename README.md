@@ -4,11 +4,9 @@ Android‑приложение магазина кроссовок с катал
 
 ## Скриншоты
 
-```
 ![Каталог](screenshots/catalog.jpeg)
 ![Корзина](screenshots/cart.jpeg)
 ![Аккаунт](screenshots/account.jpeg)
-```
 
 ## Функциональность
 
