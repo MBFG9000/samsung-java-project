@@ -4,9 +4,19 @@ Android‑приложение магазина кроссовок с катал
 
 ## Скриншоты
 
-![Каталог](screenshots/catalog.jpeg)
-![Корзина](screenshots/cart.jpeg)
-![Аккаунт](screenshots/account.jpeg)
+<table border="1" cellspacing="0" cellpadding="10">
+    <tr>
+        <td>
+            <img src="screenshots/catalog.jpeg" alt="Каталог" width="300">
+        </td>
+        <td>
+            <img src="screenshots/cart.jpeg" alt="Корзина" width="300">
+        </td>
+        <td>
+            <img src="screenshots/account.jpeg" alt="Аккаунт" width="300">
+        </td>
+    </tr>
+</table>
 
 ## Функциональность
 
